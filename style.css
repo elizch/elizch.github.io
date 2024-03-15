@@ -4,6 +4,124 @@
     --primary-accent: #E8E1FD;
     --secondary-accent: #ED6B2D;
     --tertiary-accent: #EFF483;
-    --font-family: 'Inter';
+    --font-family: "Inter";
 }
 
+/* @font-face {
+    font-family: "Inter";
+    src: url(https://fonts.googleapis.com/css?family=Inter);
+} */
+
+html {
+    font-family: "Inter";
+
+}
+
+body {
+    background-color: var(--main-bg-color);
+    margin: 2rem 4rem;
+}
+
+/** TEXT **/
+h1, h2, h3, p, a {
+    color: var(--main-text-color);
+}
+
+h1 {
+    font-family: "Lora";
+    font-size: 1.5rem;
+}
+
+h2 {
+    font-family: "Source Code Pro";
+    font-size: 1rem;
+}
+
+a {
+    text-decoration: underline;
+    text-underline-offset: 0.25rem;
+}
+
+/** NAVBAR **/
+header {
+    padding-bottom: 2rem;
+}
+
+.container-fluid {
+    padding: 0;
+}
+
+.navbar a {
+    color: var(--main-text-color);
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+    text-underline-offset: 0.5rem;
+}
+
+.navbar-brand {
+    font-family: 'Lora';
+    font-size: 1.5rem;
+}
+
+.nav-link {
+    font-family: 'Source Code Pro';
+    font-size: 1.25rem;
+}
+
+#favicon {
+    height: 36px;
+}
+
+/** CONTENT **/
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+#tagline {
+    padding-top: 12rem;
+}
+
+#tagline * {
+    text-align: center;
+}
+
+#tagline h2 {
+    font-size: 1.5rem;
+}
+
+.blurb {
+    display: flex;
+    flex-direction: row;
+    width: 75%;
+    justify-content: space-between;
+    padding-top: 5px;
+}
+
+.blurb h2 {
+    font-weight: bold;
+}
+
+/** LAYOUT **/
+.container {
+    margin-top: 1rem;
+    width: 100%;
+}
+
+hr {
+    display: block;
+    width: 76%;
+    border-width: 2px;
+    color: var(--main-text-color);
+    opacity: 100%;
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+        width: 75%;
+    }
+}
