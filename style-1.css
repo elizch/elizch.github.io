@@ -1,0 +1,229 @@
+:root {
+    --main-bg-color: #FFF6ED;
+    --main-text-color: #194027;
+    --primary-accent: #E8E1FD;
+    --secondary-accent: #ED6B2D;
+    --tertiary-accent: #EFF483;
+    --other-accent: #CF967B;
+    --font-family: "Inter";
+}
+
+/* @font-face {
+    font-family: "Inter";
+    src: url(https://fonts.googleapis.com/css?family=Inter);
+} */
+
+html {
+    font-family: "Inter";
+
+}
+
+body {
+    background-color: var(--main-bg-color);
+    margin: 2rem;
+}
+
+/** TEXT **/
+h1, h2, h3, p, a {
+    color: var(--main-text-color);
+}
+
+h1 {
+    font-family: "Lora";
+    font-size: 1.5rem;
+}
+
+h2 {
+    font-family: "Source Code Pro";
+    font-size: 1rem;
+}
+
+h3 {
+    font-family: "Inter";
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+a {
+    text-decoration: underline;
+    text-underline-offset: 0.25rem;
+}
+
+.title {
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+/** NAVBAR **/
+header {
+    padding-bottom: 2rem;
+}
+
+.container-fluid {
+    padding: 0;
+}
+
+.navbar a {
+    color: var(--main-text-color);
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+    text-underline-offset: 0.5rem;
+}
+
+.navbar-brand {
+    font-family: 'Lora';
+    font-size: 1.5rem;
+}
+
+.nav-link {
+    font-family: 'Source Code Pro';
+    font-size: 1.25rem;
+}
+
+#favicon {
+    height: 36px;
+}
+
+/** CONTENT **/
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+/** HOME PAGE **/
+#tagline {
+    padding-top: 12rem;
+}
+
+#tagline * {
+    text-align: center;
+}
+
+#tagline h2 {
+    font-size: 1.5rem;
+}
+
+.blurb {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-top: 5px;
+    gap: 1.5rem;
+}
+
+.blurb h2 {
+    font-weight: bold;
+}
+
+.blurb div {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+/** PROJECTS **/
+.grid {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    gap: 1rem;
+}
+
+.project {
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    padding: 1rem;
+    gap: 1rem;
+    align-items: flex-start;
+}
+
+.project > div {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+}
+
+.odd {
+    background-color: var(--primary-accent);
+}
+
+.odd .project-img {
+    background-color: var(--tertiary-accent);
+}
+
+.even {
+    background-color: var(--tertiary-accent);
+}
+
+.even .project-img {
+    background-color: var(--primary-accent);
+}
+
+.project h2 {
+    font-weight: bold;
+}
+
+.project-img {
+    display: flex;
+    width: 8rem;
+    height: 8rem;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    border-radius: 5px;
+}
+
+.project-img > img {
+    width: 90%;
+    border-radius: 5px;
+}
+
+.project-text {
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    justify-content: space-between;
+    gap: 0.5rem;
+}
+
+
+/** LAYOUT **/
+.container {
+    margin-top: 1rem;
+    width: 100%;
+}
+
+hr {
+    display: block;
+    width: 100%;
+    border-width: 2px;
+    color: var(--main-text-color);
+    opacity: 100%;
+}
+
+@media screen and (min-width: 768px) {
+    body {
+        margin: 2rem 4rem;
+    }
+
+    .blurb {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 75%;
+    }
+
+    .blurb div {
+        width: 70%;
+    }
+
+    hr {
+        width: 76%;
+    }
+}
