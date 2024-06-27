@@ -56,13 +56,6 @@ a {
     text-underline-offset: 0.25rem;
 }
 
-ul {
-    margin-top: 0.5rem;
-    margin-bottom: 0.5rem;
-    padding-left: 1.5rem;
-    list-style: disc;
-}
-
 .title {
     font-size: 3rem;
     font-weight: bold;
@@ -208,6 +201,11 @@ main {
     align-self: center;
 }
 
+#contact {
+    display: flex;
+    flex-direction: row;
+}
+
 #exp-accordion {
     margin-top: 2rem;
 }
@@ -221,6 +219,13 @@ main {
     color: var(--main-text-color);
     background-color: var(--main-bg-color);
     font-weight: bold;
+}
+
+.accordion-body > ul {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    padding-left: 1.5rem;
+    list-style: disc;
 }
 
 /* .accordion-button:not(.collapsed)::after {
@@ -259,5 +264,9 @@ hr {
 
     hr {
         width: 76%;
+    }
+
+    .container {
+        width: 75%;
     }
 }
